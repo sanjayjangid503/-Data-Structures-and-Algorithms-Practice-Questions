@@ -22,7 +22,6 @@
 
 
 
-
 function longestValidParentheses(s) {
    // Create a stack ds
    // set -1 as base in stack

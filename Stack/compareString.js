@@ -62,3 +62,18 @@ function checkStringCompare(str) {
 
   return stack.join(" ")
 }
+
+// Steps
+// Create an empty stack.
+// Traverse each character of the string.
+// If the character is not #, push it into the stack.
+// If the character is #:
+// pop the top character from the stack if the stack is not empty.
+// After processing the complete string, the stack contains the final edited string.
+// Repeat the same process for both strings.
+// Compare the final processed strings:
+// if equal → return true
+// otherwise → return false
+
+
+// TC = O(n) sc = O(n) 

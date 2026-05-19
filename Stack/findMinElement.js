@@ -91,3 +91,35 @@ function findMin() {
 
     return minStack[minStack.length-1]
 }
+
+
+
+// The first stack (mainStack) stores all the elements normally.
+// The second stack (minStack) keeps track of the minimum elements present in the stack.
+
+// Push Operation
+
+// Whenever a new element is pushed:
+
+// insert it into mainStack
+// if minStack is empty or the new element is smaller than or equal to the current minimum, also push it into minStack
+
+// This ensures that the top of minStack always stores the current minimum element.
+
+// Pop Operation
+
+// When removing an element:
+
+// pop the top element from mainStack
+// if the removed element is equal to the top of minStack, remove it from minStack as well
+
+// This keeps the minimum element updated correctly after every pop.
+
+// Find Minimum Operation
+
+// The current minimum element is always present at the top of minStack.
+
+// if minStack is empty, return -1
+// otherwise return the top element of minStack
+
+// Using this approach, all operations work in constant time.

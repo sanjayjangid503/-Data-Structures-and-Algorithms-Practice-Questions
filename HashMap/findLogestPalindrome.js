@@ -55,3 +55,15 @@ function longestPalindrome(n, str) {
 
     return length
 }
+
+
+
+//1.  Traverse the string and store the frequency of each character in the hashmap.
+//2.  Iterate through all frequencies:
+//    a. If a frequency is even:
+//       a. all occurrences of that character can be used in the palindrome
+//    b. If a frequency is odd:
+//       a. we can use frequency - 1 characters because palindrome sides need pairs
+//       b. keep track that at least one odd frequency exists
+// 3. After processing all characters:
+//    a. if any odd frequency was present, add 1 to the answer because one odd character can be placed in the center of the palindrome

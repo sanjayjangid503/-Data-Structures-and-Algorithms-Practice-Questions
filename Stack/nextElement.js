@@ -52,3 +52,16 @@ let arr = [1, 3, 2, 4]
 let n = 4
 
 nextLargerElement(n, arr)
+
+
+// Steps
+//1.  Create an answer array and initialize all values with -1.
+//  a. means no greater element exists on the right side.
+//2. Traverse the array from left to right.
+//3. For every current element:
+//   a. compare it with the element represented by the top index of the stack.
+//   b. while the current element is greater than the stack top element:
+//      a. remove the index from the stack
+//      b. update its answer with the current element because we found its next greater element
+//4. After processing all smaller elements from the stack, push the current index into the stack.
+//5. At the end, indexes still remaining in the stack do not have any greater element on their right side, so their answer remains -1.

@@ -60,3 +60,21 @@ function countDistinctElements(n, b, arr) {
     }
     return ans;
 }
+
+
+
+// 1. Create a hashmap to store frequencies of elements.
+// 2. Use two pointers:
+//    a. i → start of the window
+//    b. j → end of the window
+// 3. Traverse the array by moving j:
+//    a. add arr[j] into the hashmap
+//    b. increase its frequency
+// 4. When the window size becomes equal to B:
+//    a. the number of distinct elements is equal to map.size
+//    b. add this value into the answer array
+// 5. Before sliding the window forward:
+//    a. decrease frequency of arr[i]
+//    b. if frequency becomes 0, remove that element from the hashmap
+//    c. move i forward
+// 6. Continue this process until all windows are processed.
