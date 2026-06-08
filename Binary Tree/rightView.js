@@ -101,7 +101,7 @@ class Queue {
         if (this.front == null) {
             this.rear = null;
         }
-        return val;
+        return val;  
     }
 
     // returning the frontmost element
