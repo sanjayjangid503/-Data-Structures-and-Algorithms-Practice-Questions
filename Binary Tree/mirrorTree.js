@@ -65,7 +65,7 @@
 
 function mirrorBinaryTree(root) {
     if(root == null) {
-        return null
+        return null  
     }
 
     let temp = root.left
